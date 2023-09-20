@@ -12,3 +12,5 @@ if [ ! -f "cpython-3.10.13+20230826-aarch64-apple-darwin-install_only.tar.gz" ];
     python/bin/python3 -m pip install cx_Freeze
 fi
 popd
+
+env/macos.arm64/python/bin/python3 setup.py build
