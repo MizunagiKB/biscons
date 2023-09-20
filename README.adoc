@@ -1,0 +1,36 @@
+= [Bi]nary [SCons]
+:author: MizunagiKB
+:copyright: 2023 MizunagiKB <mizukb@live.jp>
+:doctype: book
+:toc:
+:toclevels: 3
+:lang: ja
+:encoding: utf-8
+:stylesdir: ./doc/res/theme/css
+:stylesheet: adoc-golo.css
+:source-highlighter: highlight.js
+:experimental:
+ifndef::env-github[:icons: font]
+ifdef::env-github,env-browser[]
+endif::[]
+ifdef::env-github[]
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+link:README.adoc[Japanese] / link:README.en.adoc[English]
+
+
+== About biscons
+
+This program is a subset of SCons.
+
+The purpose is to reduce the time and effort of setup by packaging everything necessary to run SCons.
+
+
+
+conda create -n pyenv310_biscons python=3.10
+pip install scons

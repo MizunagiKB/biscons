@@ -1,0 +1,71 @@
+= [Bi]nary [SCons]
+:author: MizunagiKB
+:copyright: 2023 MizunagiKB <mizukb@live.jp>
+:doctype: book
+:toc:
+:toclevels: 3
+:lang: ja
+:encoding: utf-8
+:stylesdir: ./doc/res/theme/css
+:stylesheet: adoc-golo.css
+:source-highlighter: highlight.js
+:experimental:
+ifndef::env-github[:icons: font]
+ifdef::env-github,env-browser[]
+endif::[]
+ifdef::env-github[]
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+link:README.adoc[English] / link:README.ja.adoc[Japanese]
+
+
+== About biscons
+
+このプログラムはSConsを利用する際に幾らかの労力を削減するためのものです。
+
+SConsを動かすために必要なものをまとめてあるので、必要な時にダウンロードして不要になったらフォルダ事削除する事が可能です。
+
+
+=== 使い方
+
+ビルド対象のSConst対応プロジェクト直下にbi.sconsというフォルダを作成して配置してください。
+
+使用方法と機能はPython3.10で動かすSConsと同じです。
+
+.Example
+[source, zsh]
+----
+bi.scons/biscons --help
+----
+
+
+=== ビルド方法
+
+Windows(x86_64)::
+
+[source, zsh]
+----
+env.windows-x86_64.bat
+python setup.py build
+----
+
+macOS(Arm64)::
+
+[source, zsh]
+----
+env.macos-arm64.bat
+python setup.py build
+----
+
+
+=== ライセンス
+
+* link:
+* link:https://github.com/pypa/pip[pip (GitHUb)]
+* link:https://github.com/SCons/scons[SCons (GitHub)]
+* link:https://github.com/marcelotduarte/cx_Freeze[cx_Freeze (GitHub)]
