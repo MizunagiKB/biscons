@@ -46,3 +46,14 @@ jobs:
     - name: build
       run: |
         python setup.py build
+    - name: Upload Artifacts
+      if: success()
+      uses: actions/upload-artifact@v2
+      with:
+        name: Upload Binaries
+        path: D:\a\biscons\biscons\build\exe.win-amd64-3.10
+    - name: Download Artifacts
+      if: success()
+      uses: actions/download-artifact@v2
+      with:
+        path: artifacts
