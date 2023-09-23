@@ -30,4 +30,4 @@ jobs:
         python\python.exe -m pip install cx_Freeze
     - name: build
       run: |
-        ython.exe setup.py build
+        python.exe setup.py build
