@@ -26,16 +26,17 @@ link:README.adoc[English] / link:README.ja.adoc[Japanese]
 
 == About biscons
 
-このプログラムはSConsを利用する際に幾らかの労力を削減するためのものです。
+このプログラムはSConsを利用する場面で、手間となるセットアップを不要とするためのものです。
 
-SConsを動かすために必要なものをまとめてあるので、必要な時にダウンロードして不要になったらフォルダ事削除する事が可能です。
+SConsを実行するために必要なものをまとめてあるので、必要な時にダウンロードしてすぐに利用可能です。
 
 
 === 使い方
 
-ビルド対象のSConst対応プロジェクト直下にbi.sconsというフォルダを作成して配置してください。
+ビルド対象のSConst対応プロジェクト直下に _bi.scons_ というフォルダを作成して配置してください。
 
-使用方法と機能はPython3.10で動かすSConsと同じです。
+使用方法と機能は _Python3.10_ で動かすSConsと同じです。
+
 
 .Example
 [source, zsh]
@@ -65,7 +66,16 @@ python setup.py build
 
 === ライセンス
 
-* link:
-* link:https://github.com/pypa/pip[pip (GitHUb)]
+このソフトウェアは MIT License として提供されます。
+
+このソフトウェアが依存する各種ソフトウェアについては licenses フォルダを参照してください。
+
+cx_Freeze::
+cx_Freeze uses a license derived from the link:https://www.python.org/psf/license[Python Software Foundation License].
+You can read the cx_Freeze license in the link:https://cx-freeze.readthedocs.io/en/latest/license.html[documentation] or in the link:https://github.com/marcelotduarte/cx_Freeze/blob/main/doc/src/license.rst[source repository].
+
+
+== 関連情報
+* link:https://github.com/indygreg/python-build-standalone[Python build standalone (GitHub)]
 * link:https://github.com/SCons/scons[SCons (GitHub)]
 * link:https://github.com/marcelotduarte/cx_Freeze[cx_Freeze (GitHub)]

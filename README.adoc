@@ -26,11 +26,57 @@ link:README.adoc[Japanese] / link:README.en.adoc[English]
 
 == About biscons
 
-This program is a subset of SCons.
+This program is designed to eliminate the hassle of setup when using SCons.
 
-The purpose is to reduce the time and effort of setup by packaging everything necessary to run SCons.
+It has everything you need to run SCons, so you can download it and use it when you need it.
 
 
+== Usage
 
-conda create -n pyenv310_biscons python=3.10
-pip install scons
+Create and place a folder called _bi.scons_ directly under the SConst-enabled project to be built.
+
+Usage and functionality are the same as SCons running in _Python3.10_.
+
+
+.Example
+[source, zsh]
+----
+bi.scons/biscons --help
+----
+
+
+== Build
+
+Windows(x86_64)::
+
+[source, zsh]
+----
+env.windows-x86_64.bat
+python setup.py build
+----
+
+macOS(Arm64)::
+
+[source, zsh]
+----
+env.macos-arm64.bat
+python setup.py build
+----
+
+
+=== License
+
+This software is provided as an MIT License.
+
+See the licenses folder for information about the various software on which this software depends.
+
+
+cx_Freeze::
+cx_Freeze uses a license derived from the link:https://www.python.org/psf/license[Python Software Foundation License].
+You can read the cx_Freeze license in the link:https://cx-freeze.readthedocs.io/en/latest/license.html[documentation] or in the link:https://github.com/marcelotduarte/cx_Freeze/blob/main/doc/src/license.rst[source repository].
+
+
+== Related Information
+* link:https://github.com/indygreg/python-build-standalone[Python build standalone (GitHub)]
+* link:https://github.com/SCons/scons[SCons (GitHub)]
+* link:https://github.com/marcelotduarte/cx_Freeze[cx_Freeze (GitHub)]
