@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   linux-x86_64:
-    runs-on: windows-latest
+    runs-on: linux-latest
     steps:
     - uses: actions/checkout@main
     - name: Download Python
