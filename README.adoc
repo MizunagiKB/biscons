@@ -24,6 +24,11 @@ endif::[]
 link:README.adoc[Japanese] / link:README.en.adoc[English]
 
 
+image::https://github.com/MizunagiKB/biscons/actions/workflows/dist-linux-x86_64.yaml/badge.svg[]
+image::https://github.com/MizunagiKB/biscons/actions/workflows/dist-macos-x86_64.yaml/badge.svg[]
+image::https://github.com/MizunagiKB/biscons/actions/workflows/dist-win-x86_64.yaml/badge.svg[]
+
+
 == About biscons
 
 This program is designed to eliminate the hassle of setup when using SCons.
